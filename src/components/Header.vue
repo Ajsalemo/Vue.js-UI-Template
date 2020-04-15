@@ -1,5 +1,5 @@
 <template>
-  <h1>Modern Design</h1>
+  <h1 class="font-weight-thin display-2 text-center text-md-right">Modern Architecture</h1>
 </template>
 
 <script>
@@ -8,7 +8,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
   color: #fff;
