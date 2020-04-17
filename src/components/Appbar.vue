@@ -3,7 +3,7 @@
     class="transparent d-flex justify-space-around"
     fixed
     flat
-    height="100"
+    height="150"
   >
     <router-link
       to="/"
@@ -49,5 +49,10 @@ export default {
 <style scoped>
 .appbar-link-underline {
   text-decoration: none;
+  transition: ease-in-out 0.6s all;
+}
+.appbar-link-underline:hover {
+  background-color: #9b9bb454;
+  transition: ease-in-out 0.6s all;
 }
 </style>

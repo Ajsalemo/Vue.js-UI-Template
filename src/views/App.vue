@@ -1,13 +1,12 @@
 <template>
   <v-app>
     <v-container
-      class="app-container d-flex flex-column justify-center ps-md-12"
+      class="app-container d-flex flex-column justify-center "
       fluid
     >
       <Appbar />
       <Header header_text="Modern Architecure" />
     </v-container>
-    <router-view></router-view>
   </v-app>
 </template>
 
@@ -26,7 +25,9 @@ export default {
 
 <style scoped>
 .app-container {
-  background-image: url("../assets/images/france.jpg");
+  background-image: url("../assets/images/germany.jpg");
+  background-position: center;
   height: 100vh;
+  border: 12px solid #2f233d;
 }
 </style>
