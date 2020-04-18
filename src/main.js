@@ -2,15 +2,12 @@ import Vue from "vue";
 import vuetify from "./plugins/vuetify";
 import App from "./views/App.vue";
 import { router } from "./routes";
-import VueLazyload from "vue-lazyload";
-
-Vue.use(VueLazyload, {
-  loading: "./assets/images/germany.jpg",
-});
+import { vueLazyLoad } from "./plugins/vue-lazyload";
 
 Vue.config.productionTip = false;
 
 new Vue({
+  vueLazyLoad,
   vuetify,
   router,
   render: (h) => h(App),

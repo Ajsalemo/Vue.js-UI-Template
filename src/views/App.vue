@@ -26,8 +26,8 @@ export default {
   },
   data() {
     return {
-      imgUrl: "../assets/images/germany.jpg"
-    }
+      imgUrl: require('../assets/images/germany.jpg'),
+    };
   },
 };
 </script>
@@ -36,8 +36,8 @@ export default {
 $app-container-class-border-color: #000;
 
 .app-container {
-  background-position: center;
   height: 100vh;
+  background-position: center;
   border: 12px solid $app-container-class-border-color;
 }
 </style>
