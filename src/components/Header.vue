@@ -1,5 +1,5 @@
 <template>
-  <h1 class="font-weight-bold display-2 text-right text-md-right white--text">
+  <h1 class="font-weight-thin display-2 text-right text-md-right white--text">
     {{ header_text }}
   </h1>
 </template>
@@ -15,8 +15,10 @@ export default {
 };
 </script>
 
-<style scoped>
-  h1 {
-    background-color: #9b9bb454;
-  }
+<style lang="scss" scoped>
+$header-h1-background-color: #9b9bb454;
+
+h1 {
+  background-color: $header-h1-background-color;
+}
 </style>

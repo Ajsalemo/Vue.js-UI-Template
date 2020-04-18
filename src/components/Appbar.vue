@@ -8,30 +8,9 @@
     <router-link
       to="/"
       class="body-2 white--text appbar-link-underline pr-8 ps-8"
-      >Home</router-link
-    >
-    <router-link
-      to="/"
-      class="body-2 white--text appbar-link-underline pr-8 ps-8"
-      >About</router-link
-    >
-
-    <router-link
-      to="/"
-      class="body-2 white--text appbar-link-underline pr-8 ps-8"
-      >Blog</router-link
-    >
-
-    <router-link
-      to="/"
-      class="body-2 white--text appbar-link-underline pr-8 ps-8"
-      >Buildings</router-link
-    >
-
-    <router-link
-      to="/"
-      class="body-2 white--text appbar-link-underline pr-8 ps-8"
-      >Gallery</router-link
+      v-for="link in appLinks"
+      :key="link"
+      >{{ link }}</router-link
     >
 
     <v-btn icon class="ms-12">
@@ -42,17 +21,24 @@
 
 <script>
 export default {
-  name: "Appbar"
+  name: "Appbar",
+  data() {
+    return {
+      appLinks: ["Home", "About", "Blog", "Buildings", "Gallery", "Contact"],
+    };
+  },
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+$appbar-background-color: #9b9bb454;
+
 .appbar-link-underline {
   text-decoration: none;
   transition: ease-in-out 0.6s all;
-}
-.appbar-link-underline:hover {
-  background-color: #9b9bb454;
-  transition: ease-in-out 0.6s all;
+  &:hover {
+    background-color: $appbar-background-color;
+    transition: ease-in-out 0.6s all;
+  }
 }
 </style>
