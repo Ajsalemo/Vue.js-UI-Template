@@ -3,10 +3,14 @@
     <v-container
       class="app-container d-flex flex-column justify-center"
       fluid
-      v-lazy:background-image="imgUrl"
+      relative
     >
       <Appbar />
-      <Header header_text="Modern Architecure" />
+      <v-lazy v-model="isActive" transition="fade-transition">
+        <v-img src="../assets/images/germany.jpg" alt="Landing page" height="100vh" position="relative">
+          <Header header_text="Modern Architecure" />
+        </v-img>
+      </v-lazy>
       <Footer />
     </v-container>
   </v-app>
@@ -26,18 +30,18 @@ export default {
   },
   data() {
     return {
-      imgUrl: require('../assets/images/germany.jpg'),
+      isActive: false,
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-$app-container-class-border-color: #000;
+$app-container-background-color: #212121;
 
 .app-container {
   height: 100vh;
   background-position: center;
-  border: 12px solid $app-container-class-border-color;
+  background-color: $app-container-background-color;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <h1 class="font-weight-thin display-2 text-right text-md-right white--text">
+  <h1 class="font-weight-thin display-2 text-right text-md-right white--text d-flex align-center justify-center">
     {{ header_text }}
   </h1>
 </template>
@@ -10,15 +10,13 @@ export default {
   props: {
     header_text: {
       type: String,
-    },
+    }
   },
 };
 </script>
 
 <style lang="scss" scoped>
-$header-h1-background-color: #9b9bb454;
-
 h1 {
-  background-color: $header-h1-background-color;
+  height: 100%;
 }
 </style>

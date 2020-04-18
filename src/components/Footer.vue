@@ -1,6 +1,6 @@
 <template>
   <v-footer padless absolute>
-    <v-row justify="center" no-gutters class="footer-top-border">
+    <v-row justify="center" no-gutters class="footer-top-border grey darken-4">
       <v-btn
         v-for="link in links"
         :key="link"

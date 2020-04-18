@@ -7,13 +7,13 @@
   >
     <router-link
       to="/"
-      class="body-2 white--text appbar-link-underline pr-8 ps-8"
+      class="body-2 white--text appbar-link-underline pr-8 ps-8 hidden-sm-and-down"
       v-for="link in appLinks"
       :key="link"
       >{{ link }}</router-link
     >
 
-    <v-btn icon class="ms-12">
+    <v-btn icon class="ms-12 hidden-sm-and-down">
       <v-icon>mdi-magnify</v-icon>
     </v-btn>
   </v-app-bar>
