@@ -1,12 +1,17 @@
 <template>
-    <v-app>
-        <router-view></router-view>
-    </v-app>
+  <v-app>
+    <router-view></router-view>
+    <Footer />
+  </v-app>
 </template>
 
 <script>
-    export default {
-        name: "Index",
-    }
-</script>
+import Footer from "@/components/Footer";
 
+export default {
+  name: "Index",
+  components: {
+      Footer,
+  }
+};
+</script>

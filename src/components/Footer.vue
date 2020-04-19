@@ -1,5 +1,5 @@
 <template>
-  <v-footer padless absolute>
+  <v-footer padless :absolute="changeFooterPosition">
     <v-row justify="center" no-gutters class="footer-top-border grey darken-4">
       <v-btn
         v-for="link in links"
@@ -25,6 +25,15 @@ export default {
     return {
       links: ["Home", "About", "Blog", "Buildings", "Gallery", "Contact"],
     };
+  },
+  computed: {
+    changeFooterPosition() {
+      let position =
+        this.$route.path === "/" || this.$route.path === "/Home"
+          ? true
+          : false;
+      return position;
+    },
   },
 };
 </script>

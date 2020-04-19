@@ -2,7 +2,7 @@
 <template>
   <v-menu class="hidden-md-and-up">
     <template v-slot:activator="{ on }">
-      <v-icon class="black--text hidden-md-and-up" dark v-on="on" size="32">
+      <v-icon class="white--text hidden-md-and-up" dark v-on="on" size="32">
         mdi-menu
       </v-icon>
     </template>

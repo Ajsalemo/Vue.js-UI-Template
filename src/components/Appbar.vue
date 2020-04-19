@@ -1,20 +1,21 @@
 <template>
   <v-app-bar
-    class="transparent d-flex justify-start justify-md-space-around hidden-sm-and-down"
-    fixed
+    class="d-flex justify-start justify-md-space-around hidden-sm-and-down"
+    color="#212121"
+    absolute
     flat
     height="150"
   >
     <v-btn
       :to="link"
-      class="body-2 white--text appbar-link-underline pr-8 ps-8 hidden-sm-and-down transparent"
+      class="body-2 white--text appbar-link-underline pr-8 ps-8 hidden-sm-and-down"
       text
       v-for="link in appLinks"
       :key="link"
       >{{ link }}</v-btn
     >
 
-    <v-btn icon class="ms-12 hidden-sm-and-down">
+    <v-btn icon class="ms-12 hidden-sm-and-down blue--text">
       <v-icon>mdi-magnify</v-icon>
     </v-btn>
     <!-- This sub-component displays when the viewport sizes down to 'sm'(Small - 600px) -->
