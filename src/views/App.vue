@@ -3,11 +3,17 @@
     <v-container
       class="app-container d-flex flex-column justify-center"
       fluid
-      relative
     >
       <Appbar />
-      <v-lazy v-model="isActive" transition="fade-transition">
-        <v-img src="../assets/images/germany.jpg" alt="Landing page" height="100vh" position="relative">
+      <v-lazy
+        v-model="isActive"
+        transition="fade-transition"
+      >
+        <v-img
+          src="../assets/images/germany.jpg"
+          alt="Landing page"
+          height="100vh"
+        >
           <Header header_text="Modern Architecure" />
         </v-img>
       </v-lazy>

@@ -1,9 +1,10 @@
 <template>
   <v-app-bar
-    class="transparent d-flex justify-space-around"
+    class="transparent d-flex justify-start justify-md-space-around hidden-sm-and-down"
     fixed
     flat
     height="150"
+    id="desktop-app-bar"
   >
     <router-link
       to="/"
@@ -16,15 +17,24 @@
     <v-btn icon class="ms-12 hidden-sm-and-down">
       <v-icon>mdi-magnify</v-icon>
     </v-btn>
+    <!-- This sub-component displays when the viewport sizes down to 'sm'(Small - 600px) -->
+    <!-- This component displays the mobile navbar, which is opened by clicking on the hamburger(menu) icon -->
+    <MobileNav v-bind:appLinks="appLinks"/>
   </v-app-bar>
 </template>
 
 <script>
+import { navNameList } from "../shared/nav-name-list"
+import MobileNav from "./MobileNav"
+
 export default {
   name: "Appbar",
+  components: {
+    MobileNav,
+  },
   data() {
     return {
-      appLinks: ["Home", "About", "Blog", "Buildings", "Gallery", "Contact"],
+      appLinks: navNameList,
     };
   },
 };
@@ -40,5 +50,9 @@ $appbar-background-color: #9b9bb454;
     background-color: $appbar-background-color;
     transition: ease-in-out 0.6s all;
   }
+}
+
+#desktop-app-bar {
+  z-index: 999;
 }
 </style>
