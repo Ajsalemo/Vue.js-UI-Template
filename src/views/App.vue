@@ -14,7 +14,7 @@
           alt="Landing page"
           height="100vh"
         >
-          <Header header_text="Modern Architecure" />
+          <Header header_text_one="Modern" header_text_two="Architecure" />
         </v-img>
       </v-lazy>
       <Footer />

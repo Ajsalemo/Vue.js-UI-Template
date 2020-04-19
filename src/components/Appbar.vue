@@ -6,12 +6,13 @@
     height="150"
     id="desktop-app-bar"
   >
-    <router-link
-      to="/"
-      class="body-2 white--text appbar-link-underline pr-8 ps-8 hidden-sm-and-down"
+    <v-btn
+      :to="link"
+      class="body-2 white--text appbar-link-underline pr-8 ps-8 hidden-sm-and-down transparent"
+      text
       v-for="link in appLinks"
       :key="link"
-      >{{ link }}</router-link
+      >{{ link }}</v-btn
     >
 
     <v-btn icon class="ms-12 hidden-sm-and-down">
@@ -41,7 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$appbar-background-color: #9b9bb454;
+$appbar-background-color: #6c6c9754;
 
 .appbar-link-underline {
   text-decoration: none;
