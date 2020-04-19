@@ -43,11 +43,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$app-container-background-color: #212121;
+@import '../assets/scss/shared-styles.scss';
 
 .app-container {
-  height: 100vh;
-  background-position: center;
-  background-color: $app-container-background-color;
+  @include views-container
 }
 </style>

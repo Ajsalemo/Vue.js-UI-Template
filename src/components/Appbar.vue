@@ -4,7 +4,6 @@
     fixed
     flat
     height="150"
-    id="desktop-app-bar"
   >
     <v-btn
       :to="link"
@@ -51,9 +50,5 @@ $appbar-background-color: #6c6c9754;
     background-color: $appbar-background-color;
     transition: ease-in-out 0.6s all;
   }
-}
-
-#desktop-app-bar {
-  z-index: 999;
 }
 </style>

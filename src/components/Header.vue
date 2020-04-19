@@ -1,6 +1,6 @@
 <template>
   <h1 class="font-weight-thin display-2 text-center text-md-right white--text d-flex align-center justify-center">
-    <strong class="mb-12 grey darken-4">{{ header_text_one }}</strong> <span class="black--text mb-12">{{ header_text_two }}</span>
+    <strong class="mb-12 grey darken-4">{{ header_text_one }}</strong> <span class="black--text mb-12 ps-3">{{ header_text_two }}</span>
   </h1>
 </template>
 

@@ -1,0 +1,11 @@
+// Common and repeating styles to be shared between components
+
+// Colors
+$views-background-color: #212121;
+
+// Mix-ins
+@mixin views-container {
+  height: 100vh;
+  background-position: center;
+  background-color: $views-background-color;
+}
