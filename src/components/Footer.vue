@@ -28,11 +28,11 @@ export default {
   },
   computed: {
     changeFooterPosition() {
-      let position =
+      let footerPosition =
         this.$route.path === "/" || this.$route.path === "/Home"
           ? true
           : false;
-      return position;
+      return footerPosition;
     },
   },
 };

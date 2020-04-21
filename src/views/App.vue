@@ -4,7 +4,6 @@
       class="app-container d-flex flex-column justify-center"
       fluid
     >
-      <Appbar />
       <v-lazy
         v-model="isActive"
         transition="fade-transition"
@@ -23,13 +22,11 @@
 
 <script>
 import Header from "@/components/Header";
-import Appbar from "@/components/Appbar";
 
 export default {
   name: "App",
   components: {
     Header,
-    Appbar,
   },
   data() {
     return {

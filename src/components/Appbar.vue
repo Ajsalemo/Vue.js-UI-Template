@@ -2,7 +2,7 @@
   <v-app-bar
     class="d-flex justify-start justify-md-space-around hidden-sm-and-down"
     color="#212121"
-    absolute
+    :absolute="changeAppbarPosition"
     flat
     height="150"
   >
@@ -20,13 +20,13 @@
     </v-btn>
     <!-- This sub-component displays when the viewport sizes down to 'sm'(Small - 600px) -->
     <!-- This component displays the mobile navbar, which is opened by clicking on the hamburger(menu) icon -->
-    <MobileNav v-bind:appLinks="appLinks"/>
+    <MobileNav v-bind:appLinks="appLinks" />
   </v-app-bar>
 </template>
 
 <script>
-import { navNameList } from "../shared/nav-name-list"
-import MobileNav from "./MobileNav"
+import { navNameList } from "../shared/nav-name-list";
+import MobileNav from "./MobileNav";
 
 export default {
   name: "Appbar",
@@ -37,6 +37,12 @@ export default {
     return {
       appLinks: navNameList,
     };
+  },
+  computed: {
+    changeAppbarPosition() {
+      let appbarPosition = this.$route.path !== "/Blog" ? true : false;
+      return appbarPosition;
+    },
   },
 };
 </script>

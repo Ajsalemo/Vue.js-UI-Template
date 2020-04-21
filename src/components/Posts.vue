@@ -1,0 +1,88 @@
+<template>
+  <v-row>
+    <v-col>
+      <v-card
+        width="600"
+        class="mx-auto blog-post-background flex-sm-shrink-1"
+        height="fit-content"
+        tile
+      >
+        <v-list-item>
+          <v-list-item-avatar color="grey"></v-list-item-avatar>
+          <v-list-item-content>
+            <v-list-item-title class="headline white--text"
+              >{{ posts.title }}</v-list-item-title
+            >
+            <v-list-item-subtitle class="white--text"
+              >by <span class="blue--text">{{ posts.author }}</span> in
+              <span class="blue--text"
+                >{{ posts.category }}</span
+              ></v-list-item-subtitle
+            >
+            <v-list-item-subtitle class="white--text"
+              >Posted on <span class="blue--text">{{ posts.date }}</span></v-list-item-subtitle
+            >
+          </v-list-item-content>
+        </v-list-item>
+        <v-lazy
+            v-model="isActive"
+            transition="fade-transition"
+        >
+            <v-img
+            src="https://cdn.vuetifyjs.com/images/cards/mountain.jpg"
+            height="194"
+            ></v-img>
+        </v-lazy>
+        <v-card-text class="white--text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </v-card-text>
+
+        <v-card-actions>
+          <v-btn text color="blue">
+            Read
+          </v-btn>
+          <v-btn text color="blue">
+            Bookmark
+          </v-btn>
+          <v-spacer></v-spacer>
+          <v-btn icon color="red">
+            <v-icon>mdi-heart</v-icon>
+          </v-btn>
+          <v-btn icon color="blue">
+            <v-icon>mdi-share-variant</v-icon>
+          </v-btn>
+        </v-card-actions>
+        <v-card-text class="white--text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          cupiditate placeat rerum soluta illo ab temporibus sed? Ratione
+          suscipit ducimus dolores architecto vel inventore consectetur, facere
+          possimus, accusantium nulla quod.
+        </v-card-text>
+      </v-card>
+    </v-col>
+  </v-row>
+</template>
+
+<script>
+export default {
+  name: "Posts",
+  props: {
+      posts: {
+          type: Object
+      }
+  },
+  data() {
+      return {
+          isActive: false,
+      }
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+$blog-post-background-color: #06071b;
+
+.blog-post-background {
+  background-color: $blog-post-background-color;
+}
+</style>
