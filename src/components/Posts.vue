@@ -29,7 +29,7 @@
             transition="fade-transition"
         >
             <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/mountain.jpg"
+            src="'posts.image'"
             height="194"
             ></v-img>
         </v-lazy>
