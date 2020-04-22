@@ -6,6 +6,7 @@
         class="mx-auto blog-post-background flex-sm-shrink-1"
         height="fit-content"
         tile
+        flat
       >
         <v-list-item>
           <v-list-item-avatar color="grey"></v-list-item-avatar>
@@ -29,7 +30,8 @@
             transition="fade-transition"
         >
             <v-img
-            src="'posts.image'"
+            :src="require(`@/assets/images/${posts.image}`)"
+            :alt="posts.title"
             height="194"
             ></v-img>
         </v-lazy>
@@ -80,9 +82,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$blog-post-background-color: #06071b;
+@import "../assets/scss/shared-styles.scss";
 
 .blog-post-background {
-  background-color: $blog-post-background-color;
+  background-color: $views-background-color;
 }
 </style>

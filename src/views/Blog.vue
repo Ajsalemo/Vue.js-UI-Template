@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-container
-      class="blog-app-container d-flex flex-column justify-center"
+      class="blog-app-container d-flex flex-column justify-center pt-12 pb-12"
       fluid
       v-for="(posts, item) in blogPostData"
       v-bind:key="item"
@@ -35,5 +35,6 @@ export default {
 
 .blog-app-container {
   @include views-container;
+  border-bottom: 1px solid grey;
 }
 </style>
