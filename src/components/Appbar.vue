@@ -14,7 +14,6 @@
       :key="link"
       >{{ link }}</v-btn
     >
-
     <v-btn icon class="ms-12 hidden-sm-and-down blue--text">
       <v-icon>mdi-magnify</v-icon>
     </v-btn>

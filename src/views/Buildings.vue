@@ -2,7 +2,7 @@
   <v-app>
     <v-container
       class="buildings-app-container d-flex flex-column justify-center"
-      fluid=""
+      fluid
     >
       <v-lazy v-model="isActive" transition="fade-transition">
         <HeaderImage src="construction.jpg" alt="Buildings page" height="35em">
@@ -22,6 +22,11 @@ export default {
   components: {
     HeaderImage,
     Header,
+  },
+  data() {
+    return {
+      isActive: false,
+    };
   },
 };
 </script>
