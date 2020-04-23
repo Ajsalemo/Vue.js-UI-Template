@@ -3,6 +3,5 @@ export const navNameList = [
   "About",
   "Blog",
   "Buildings",
-  "Gallery",
   "Contact",
 ];

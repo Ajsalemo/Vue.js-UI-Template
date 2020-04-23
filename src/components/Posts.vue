@@ -11,29 +11,29 @@
         <v-list-item>
           <v-list-item-avatar color="grey"></v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="headline white--text"
-              >{{ posts.title }}</v-list-item-title
-            >
+            <v-list-item-title class="headline white--text">{{
+              posts.title
+            }}</v-list-item-title>
             <v-list-item-subtitle class="white--text"
               >by <span class="blue--text">{{ posts.author }}</span> in
-              <span class="blue--text"
-                >{{ posts.category }}</span
-              ></v-list-item-subtitle
+              <span class="blue--text">{{
+                posts.category
+              }}</span></v-list-item-subtitle
             >
             <v-list-item-subtitle class="white--text"
-              >Posted on <span class="blue--text">{{ posts.date }}</span></v-list-item-subtitle
+              >Posted on
+              <span class="blue--text">{{
+                posts.date
+              }}</span></v-list-item-subtitle
             >
           </v-list-item-content>
         </v-list-item>
-        <v-lazy
-            v-model="isActive"
-            transition="fade-transition"
-        >
-            <v-img
-            :src="require(`@/assets/images/${posts.image}`)"
+        <v-lazy v-model="isActive" transition="fade-transition">
+          <HeaderImage
+            :src="posts.image"
             :alt="posts.title"
             height="194"
-            ></v-img>
+          ></HeaderImage>
         </v-lazy>
         <v-card-text class="white--text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -66,17 +66,22 @@
 </template>
 
 <script>
+import HeaderImage from "@/components/HeaderImage";
+
 export default {
   name: "Posts",
+  components: {
+    HeaderImage,
+  },
   props: {
-      posts: {
-          type: Object
-      }
+    posts: {
+      type: Object,
+    },
   },
   data() {
-      return {
-          isActive: false,
-      }
+    return {
+      isActive: false,
+    };
   },
 };
 </script>

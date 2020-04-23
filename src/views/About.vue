@@ -8,13 +8,13 @@
         v-model="isActive"
         transition="fade-transition"
       >
-        <v-img
-          src="../assets/images/germany.jpg"
-          alt="Landing page"
+        <HeaderImage
+          src="germany.jpg"
+          alt="About page"
           height="35em"
         >
-          <Header header_text_one="About" />
-        </v-img>
+          <Header header_text_one='About' />
+        </HeaderImage>
       </v-lazy>
       <AboutCardContainer />
     </v-container>
@@ -24,12 +24,14 @@
 <script>
 import Header from "@/components/Header";
 import AboutCardContainer from "@/components/AboutCardContainer";
+import HeaderImage from "@/components/HeaderImage";
 
 export default {
   name: "About",
   components: {
     Header,
     AboutCardContainer,
+    HeaderImage,
   },
   data() {
     return {
