@@ -4,10 +4,10 @@
       class="blog-app-container d-flex flex-column justify-center pt-12 pb-12"
       fluid
       v-for="(posts, item) in blogPostData"
-      v-bind:key="item"
+      :key="item"
     >
         <Posts 
-            v-bind:posts="posts"
+            :posts="posts"
         />
     </v-container>
   </v-app>
