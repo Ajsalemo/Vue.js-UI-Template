@@ -1,9 +1,9 @@
 <template>
   <v-card class="mx-auto about-card" max-width="344" tile>
     <v-card-text>
-      <p class="display-1 white--text">
+      <h2 class="display-1 white--text">
         {{ title_text }}
-      </p>
+      </h2>
       <div class="grey--text">
         {{ body_text }}
       </div>

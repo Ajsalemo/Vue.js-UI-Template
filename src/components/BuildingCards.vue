@@ -10,7 +10,7 @@
       <HeaderImage :src="building.image" height="300"></HeaderImage>
     </v-lazy>
     <v-card-text class="white--text text-center">
-      {{ building.title }}
+      <h1>{{ building.title }}</h1>
     </v-card-text>
 
     <v-card-text class="white--text">

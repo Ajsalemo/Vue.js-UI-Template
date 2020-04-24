@@ -11,9 +11,9 @@
         <v-list-item>
           <v-list-item-avatar color="grey"></v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="headline white--text">{{
+            <h1 class="white--text">{{
               posts.title
-            }}</v-list-item-title>
+            }}</h1>
             <v-list-item-subtitle class="white--text"
               >by <span class="blue--text">{{ posts.author }}</span> in
               <span class="blue--text">{{
