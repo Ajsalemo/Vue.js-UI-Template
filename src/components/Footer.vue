@@ -20,18 +20,18 @@
 </template>
 
 <script>
+import { navNameList } from "../shared/nav-name-list";
+
 export default {
   data() {
     return {
-      links: ["Home", "About", "Blog", "Buildings", "Gallery", "Contact"],
+      links: navNameList,
     };
   },
   computed: {
     changeFooterPosition() {
       let footerPosition =
-        this.$route.path === "/" || this.$route.path === "/Home"
-          ? true
-          : false;
+        this.$route.path === "/" || this.$route.path === "/Home" ? true : false;
       return footerPosition;
     },
   },
@@ -40,14 +40,8 @@ export default {
 
 <style lang="scss" scoped>
 $footer-bottom-color: #000;
-$footer-bottom-borderpx: 12px solid;
 
 .footer-bottom-section {
   background-color: $footer-bottom-color;
-}
-.footer-top-border {
-  border-right: $footer-bottom-borderpx $footer-bottom-color;
-  border-bottom: $footer-bottom-borderpx $footer-bottom-color;
-  border-left: $footer-bottom-borderpx $footer-bottom-color;
 }
 </style>
