@@ -7,9 +7,9 @@
 
 ### Home
 <br>
+
 ![Imgur](https://i.imgur.com/FvOsPad.png)
 
-<br>
 <br>
 
 ### About
@@ -32,8 +32,8 @@
 ![Imgur](https://i.imgur.com/1BDVJ6W.png)
 
 <br>
-<br>
 
 ### Contact
 <br>
+
 ![Imgur](https://i.imgur.com/QsZwKbd.png)
