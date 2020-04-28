@@ -2,6 +2,7 @@
 ## Vue-UI-Template
 
 ### A blog mock-up to start experimenting with vue.js
+[https://vue-blog-template.netlify.app/Home](https://vue-blog-template.netlify.app/Home)
 
 <br>
 
