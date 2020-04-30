@@ -1,7 +1,7 @@
 
 ## Vue-UI-Template
 
-### A blog mock-up to start experimenting with vue.js and Vuetify and SASS.
+### A blog mock-up to start experimenting with vue.js, Vuetify and SASS.
 [https://vue-blog-template.netlify.app/Home](https://vue-blog-template.netlify.app/Home)
 
 <br>
