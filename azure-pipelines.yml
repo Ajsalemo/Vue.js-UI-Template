@@ -9,13 +9,13 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '2b812e5b-d903-49da-a518-f2be71f0b280'
+  azureSubscription: '<ARM CONNECTION>'
 
   # Web app name
-  webAppName: 'ansalemo-vue-envvar-test'
+  webAppName: '<WEB APP NAME>'
 
   # Environment name
-  environmentName: 'ansalemo-vue-envvar-test'
+  environmentName: '<WEB APP NAME>'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
